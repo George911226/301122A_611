@@ -8,9 +8,7 @@ asdsada
 }
 
 body {
-	background:#212121 url("../img/final.png");
-	color: #FFFF;
-	font -size: 16 px;
+	background:#212121 /*url("../img/final.png")*/;
 	color: #FFFF;
 }
 
@@ -18,51 +16,55 @@ h1{
 	color : #F60;
 	margin : 0.25 em auto;
 	text-align :center;
-text-shadow: 5px 5px 10px rgba(255,255,255,0.5);	
+	text-shadow: 5px 5px 10px rgba(255,255,255,0.5);	
 }
 
-header,footer {
+
+
+header,nav,footer {
 	background : #1E6381;
 	border-radius: 0.5em;
 	margin:0.5em auto;
 	max-width: 960px;
 	padding:0.25em;
 	text-align: center;
-	
-	
+		
 }
 
+
 section#fondo{
-	background : #1E6381;
+	background : #FFF;
 	border-radius: 0.5em;
 	margin:0.5em auto;
 	max-width: 960px;
 	padding:0;
 	text-align: center;
-	
-}
+	}
 
 
-section#sec_art1,aside{
+section#Contenido,aside{
 	background : #1E6381;
 	border-radius: 0.5em;
 	display: inline-block;
-	margin:0.5em auto;
+	margin:0.25em auto;
 	max-width:960px;
 	min-height:200px;
 	padding:0.25em;
 	text-align:center;
-	vertical-align:top;
-	width:60%;
-	
-	
+	vertical-align:top;	
+	width: 71%;
 }
 
 article{
 	background : #011E30;
 	border-radius: 0.5em;
+		vertical-align: right-side;
 }
 
+
 aside{
-	width:30%;
+	width:25%;
 }
+
+
+
