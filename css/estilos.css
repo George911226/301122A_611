@@ -1,3 +1,5 @@
+
+
 /*
 sddsada
 asdsada
@@ -5,11 +7,13 @@ asdsada
 * {
 	margin :0;
 	padding:0;
+
 }
 
 body {
 	background:#212121 /*url("../img/final.png")*/;
 	color: #FFFF;
+	font-family:  "Franklin Gothic Heavy";
 }
 
 h1{
@@ -20,8 +24,21 @@ h1{
 }
 
 
+header {
+	height:auto!important;
+	/*headerHeight*/
+	height:400px;min-height:400px;
+	background : #1E6381;
+	background-image:url("../img/ECBTI_1.png");
+	border-radius: 0.5em;
+	margin:0.5em auto;
+	max-width: 960px;
+	padding:0.25em;
+	text-align: center;
 
-header,nav,footer {
+}
+
+nav,footer {
 	background : #1E6381;
 	border-radius: 0.5em;
 	margin:0.5em auto;
@@ -63,10 +80,8 @@ article{
 
 
 aside{
-	Background:#FFF;
+	background:#FFF;
 	color:#F60;
 	width:25%;
 }
-
-
 
