@@ -85,3 +85,31 @@ aside{
 	width:25%;
 }
 
+main {
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+}
+
+.tabla {width: 400px;}
+
+.tabla{
+display: table;
+border: medium #C0C0C0 solid;
+width: 678px;
+}
+.columna1{
+display: table-cell;
+border: 2px #C0C0C0;
+width: 226px;
+}
+.columna2{
+display: table-cell;
+border: 2px #C0C0C0;
+width: 226px;
+}
+.columna3{
+display: table-cell;
+border: 2px #C0C0C0;
+width: 226px;
+}
