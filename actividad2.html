@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang ="es">
+<head>
+<META charset ="uft-8"/>
+<meta description = "Seguridad informatica"/>
+<link rel ="stylesheet" type="text/css" media ="all" href="css/fuentes.css"/>
+<link rel ="stylesheet" type="text/css" media ="all" href="css/nav.css"/>
+<link rel ="stylesheet" type="text/css" media ="all" href="css/estilos.css"/>
+<!--/-->
+<title>Ovi Seguridad Informatica</title>
+</head>
+
+<body>
+
+<header>
+   <h1>Seguridad Informatica</h1>
+ <!--
+<figure>   aqui va el logo 
+<figcaption> titulo de la imganen </figcaption>
+</figure>
+-->
+
+</header>
+
+<nav id="siteNav">
+	<ul class="nav">
+	   <li id="active"><a href="index.html" class="active daddy main-node">Inicio</a></li>
+	   <li><a href="#">Lecturas O.V.I.</a>
+	   <ul class="other-section">
+	      <li><a href="seguridad_informatica.html" class="no-ch">Seguridad informatica</a></li>
+	      <li><a href="mecanismos_seguridad.html" class="no-ch">Mecanismos de seguridad</a></li>
+	      <li><a href="conceptos_seguridad.html" class="no-ch">Conceptos Seguridad</a></li>
+	      <li><a href="mini_tutorial_y_chuleta_de_comandos_git.html" class="no-ch">Lectura 4</a></li>
+	      <li><a href="mini_tutorial_y_chuleta_de_comandos_git.html" class="no-ch">Lectura 5</a></li>
+	   </ul>
+	   </li>
+	   <li><a href="#" class="daddy">Material Multimedial O.V.I.</a>
+	   <ul class="other-section">
+	      <li><a href="video1.html" class="no-ch">Video 1</a></li>
+	      <li><a href="video2.html" class="no-ch">Video 2</a></li>	      
+	   </ul>
+	   </li>
+	   <li><a href="#" class="daddy">Actividades</a>
+	   <ul class="other-section">
+	      <li><a href="actividad1.html" class="no-ch">Actividad 1</a></li>
+	      <li><a href="actividad2.html" class="no-ch">Actividad 2</a></li>
+	      <li><a href="actividad3.html" class="no-ch">Actividad 3</a></li>
+	      <li><a href="actividad4.html" class="no-ch">Actividad 4</a></li>
+	      <li><a href="actividad5.html" class="no-ch">Actividad 5</a></li>
+	      <li><a href="actividad6.html" class="no-ch">Actividad 6</a></li>
+	   </ul>
+	   </li>
+	   <li><a href="autores.html" class="daddy">Autores</a>	   
+	   </li>
+
+	</ul>
+</nav>
+
+<section id = "fondo">
+<!--
+<hgroup>
+<h1> encabezado </h1>
+<h2> encabezado sssd </h2>
+</hgroup>
+-->
+<h2> encabezado sssd </h2>
+
+
+
+<section id = "sec_art1">
+<article>
+	<br/>
+	
+	<h2 align="center"> Juego Ahorcado </h2>
+
+
+<p align="center"></p>
+<span id="PIS1"></span><span id="PIS11"></span><span id="PIS12"></span><span id="PIS2"></span><span id="PIS3"></span><span id="PIS4"></span><span id="PIS5"></span>
+<font size="7"><p id="P"></P></font>
+
+<br>
+<span id="A" onClick="validar('A')">A-</span>
+<span id="B" onClick="validar('B')">B-</span>
+<span id="C" onClick="validar('C')">C-</span>
+<span id="D" onClick="validar('D')">D-</span>
+<span id="E" onClick="validar('E')">E-</span>
+<span id="F" onClick="validar('F')">F-</span>
+<span id="G" onClick="validar('G')">G-</span>
+<span id="H" onClick="validar('H')">H-</span>
+<span id="I" onClick="validar('I')">I-</span>
+<span id="J" onClick="validar('J')">J-</span>
+<span id="K" onClick="validar('K')">K-</span>
+<span id="L" onClick="validar('L')">L-</span>
+<span id="M" onClick="validar('M')">M-</span>
+<span id="N" onClick="validar('N')">N-</span>
+<span id="O" onClick="validar('O')">O-</span>
+<span id="P" onClick="validar('P')">P-</span>
+<span id="Q" onClick="validar('Q')">Q-</span>
+<span id="R" onClick="validar('R')">R-</span>
+<span id="S" onClick="validar('S')">S-</span>
+<span id="T" onClick="validar('T')">T-</span>
+<span id="U" onClick="validar('U')">U-</span>
+<span id="V" onClick="validar('V')">V-</span>
+<span id="W" onClick="validar('W')">W-</span>
+<span id="X" onClick="validar('X')">X-</span>
+<span id="Y" onClick="validar('Y')">Y-</span>
+<span id="Z" onClick="validar('Z')">Z</span>
+
+<BR>
+<BR>
+
+<style>
+.bt2{padding:6px;border-radius:10px;}
+</style>
+
+
+<button id= "B1" class="bt2" onClick ="cargar(1)">Palabra 1</button>
+<button id= "B2" class="bt2" onClick ="cargar(2)">Palabra 2</button>
+<button id= "B3" class="bt2" onClick ="cargar(3)">Palabra 3</button>
+<button id= "B4" class="bt2" onClick ="cargar(4)">Palabra 4</button>
+<button id= "B5" class="bt2" onClick ="cargar(5)">Palabra 5</button>
+
+<script>
+
+
+function cargar(x)
+{
+var v=document.getElementById('P').innerHTML;
+if (v == "")
+{
+var pl = palabras(x);
+var nl = pl.length;
+var letras =["_"]; 
+for (var i = 0 ; i<(nl-1); i++)
+{
+letras.push("_");
+}
+var palabra = letras.join("");
+document.getElementById('P').innerHTML = palabra;
+document.getElementById('PIS1').innerHTML = 'Palabra ';
+document.getElementById('PIS11').innerHTML = x;
+document.getElementById('PIS12').innerHTML =  ' de ';
+document.getElementById('PIS2').innerHTML =  nl;
+document.getElementById('PIS3').innerHTML = ' letras';
+}
+v=document.getElementById('PIS5').innerHTML;
+if (v == 0)
+{
+var pl = palabras(x);
+var nl = pl.length;
+var letras =["_"]; 
+for (var i = 0 ; i<(nl-1); i++)
+{
+letras.push("_");
+}
+var palabra = letras.join("");
+document.getElementById('P').innerHTML = palabra;
+document.getElementById('PIS1').innerHTML = 'Palabra ';
+document.getElementById('PIS11').innerHTML = x;
+document.getElementById('PIS12').innerHTML =  ' de ';
+document.getElementById('PIS2').innerHTML =  nl;
+document.getElementById('PIS3').innerHTML = ' letras';
+}
+}
+
+
+function validar(x)
+{
+var n_p = document.getElementById('PIS11').innerHTML;
+var v=document.getElementById('P').innerHTML;
+if (v == "")
+{
+alert('Seleccionar palabra');
+}
+else
+{
+var pl = palabras(n_p);
+var nl = pl.length;
+mostrar(pl,nl,x);
+}
+
+}
+
+
+
+function palabras(x)
+{
+if (x == 1)
+{
+return 'PHISHING';
+}
+if (x == 2)
+{
+return 'ANTIVIRUS';
+}
+if (x == 3)
+{
+return 'INTEGRIDAD';
+}
+if (x == 4)
+{
+return 'DISPONIBILIDAD';
+}
+if (x == 5)
+{
+return 'CONFIDENCIALIDAD';
+}
+
+
+}
+
+
+function mostrar(x,y,z)
+{
+var n_p = document.getElementById('PIS11').innerHTML;
+var v_pala=document.getElementById('P').innerHTML;
+var letras = x.split(""); 
+var letras2 = v_pala.split(""); 
+var faltan=0;
+for (var i = 0 ; i<y; i++)
+{
+
+if (letras2[i]== "_")
+{
+if (letras[i]== z)
+{
+letras2[i]=z;
+}
+else
+{
+letras2[i]=letras2[i];
+}
+}
+else
+{
+letras2[i]=letras2[i];
+}
+}
+var palabra = letras2.join("");
+letras=palabra.split("");
+for (var j = 0 ; j<y; j++)
+{
+if (letras[j]=="_")
+{
+faltan=faltan+1;
+}
+}
+
+document.getElementById('PIS4').innerHTML = '          Letras faltantes: ';
+document.getElementById('PIS5').innerHTML = faltan;
+document.getElementById('P').innerHTML = palabra;
+var boton = 'B';
+boton = boton + String(n_p);
+
+if (faltan == 0)
+{
+document.getElementById(boton).innerHTML = palabra;
+document.getElementById(boton).style.background = "Green";   
+}
+
+}
+
+
+</script>
+
+
+<br>
+
+<br>
+
+
+</article>
+</section>
+
+
+</section>
+
+
+<footer>
+aprendiendo html5
+</footer>
+
+
+</body>
+
+</html>
